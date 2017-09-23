@@ -6,8 +6,9 @@ public class StrPalindrome {
     }
 
     private static boolean checkPalindrome(String str){
-        int i = str.length() - 1;
-        int j = 0;
+
+        int i = str.length() - 1; // the end of the string
+        int j = 0; // the beginning of the string
         while(true){
             if(str.charAt(i) == str.charAt(j)){
                 i--;
