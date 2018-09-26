@@ -18,7 +18,7 @@ public class ValidParentheses {
 			} else if (c == ']' && stack.peek() == '['){
 				stack.pop();
 			} else {
-				return false
+				return false;
 			}
 			
 		}
