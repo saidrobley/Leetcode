@@ -12,9 +12,12 @@ public class ReverseInteger {
 			x *= -1;
 		}
 		long reverse = 0;
+		StringBuilder sb = new StringBuilder();
 		while (x > 0) {
 			reverse = (reverse * 10) + (x % 10);
+			sb.append(reverse);
 			x /= 10;
+			
 		}
 		if(reverse > Integer.MAX_VALUE){
 			return 0;
