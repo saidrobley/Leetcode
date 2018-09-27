@@ -1,3 +1,4 @@
+
 import java.util.Stack;
 /*
 	Given a non-empty array of integers, every element appears twice
@@ -13,7 +14,9 @@ public class SingleNumber {
 	
 	public static int getSingleNumber(int[] arr) {
 		Stack<Integer> stack = new Stack<Integer>();
+		
 		for(int number: arr) {
+			
 			if(stack.isEmpty()){
 				stack.push(number);
 			} else if(stack.peek() == number) {
@@ -21,7 +24,7 @@ public class SingleNumber {
 				
 			}
 		}
-			
+		
 		return stack.pop();
 	}
 	
